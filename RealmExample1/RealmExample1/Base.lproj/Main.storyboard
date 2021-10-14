@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RealmExample1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p2d-Nz-Zq4">
+                                <rect key="frame" x="152" y="428" width="110" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5iV-49-Nab"/>
+                                    <constraint firstAttribute="width" constant="110" id="7aQ-3a-lVL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="924-sJ-EDS">
+                                <rect key="frame" x="90" y="488" width="234.5" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgz-Oa-8Rp">
+                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add"/>
+                                        <connections>
+                                            <action selector="onAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIE-cL-zoc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKO-1d-BoO">
+                                        <rect key="frame" x="81.5" y="0.0" width="71.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Delete"/>
+                                        <connections>
+                                            <action selector="onDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="owp-vc-Fan"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuH-bX-M2w">
+                                        <rect key="frame" x="163" y="0.0" width="71.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Display"/>
+                                        <connections>
+                                            <action selector="onDisplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pic-e2-OSQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="924-sJ-EDS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9qz-pu-1xr"/>
+                            <constraint firstItem="p2d-Nz-Zq4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aRb-II-3SS"/>
+                            <constraint firstItem="924-sJ-EDS" firstAttribute="top" secondItem="p2d-Nz-Zq4" secondAttribute="bottom" constant="20" id="kbK-hj-oSB"/>
+                            <constraint firstItem="p2d-Nz-Zq4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xsq-nA-HR1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField1" destination="p2d-Nz-Zq4" id="kEa-Uo-CPm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
