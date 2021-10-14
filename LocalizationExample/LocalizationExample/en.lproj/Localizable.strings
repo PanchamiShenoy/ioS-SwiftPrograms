@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  LocalizationExample
+
+  Created by Panchami Shenoy on 13/10/21.
+  
+*/
+"nameKey" = "name";
+"numberKey" = "email";
